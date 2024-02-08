@@ -13,14 +13,16 @@ class Listview4 extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: Text("Listview seperated"),),
       body: ListView.separated(itemBuilder: (context,index)=> Card(color: Colors.amber,
-        child: Image.asset("assets/icons/logo3.png"),
+        //child: Image.asset("assets/icons/logo3.png"),
+        child: Text("januvary"),
+
       ),
           separatorBuilder: (context,index){
             if(index%4==0){
               return Card(color: Colors.red,
                 child: Text("advertisement"),);}
-            return SizedBox(height: 5,);},
-          itemCount: 15),
+            return SizedBox(height: 8,);},
+          itemCount: 8),
     );
   }
 }

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "60364394705",
+    "project_id": "mygsignin-348e1",
+    "storage_bucket": "mygsignin-348e1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:60364394705:android:c12e12423f1813faabf5f0",
+        "android_client_info": {
+          "package_name": "com.flutter_project.my_flutter_project"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhTiiH1N2n5Ds-I0a3vkFdvJeftLS8qJU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
