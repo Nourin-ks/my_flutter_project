@@ -3,8 +3,12 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:my_flutter_project/local_storage/sqflit_ex/login_reg_sqflit/login_sqf.dart';
 import 'package:my_flutter_project/local_storage/sqflit_ex/login_reg_sqflit/signup_sqf.dart';
 
-class Home_sqf extends StatelessWidget {
-  const Home_sqf({super.key});
+
+void main(){
+  runApp(MaterialApp(home: Home_dup(),));
+}
+class Home_dup extends StatelessWidget {
+  const Home_dup({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -13,9 +17,9 @@ class Home_sqf extends StatelessWidget {
         child: Container(
           width: double.infinity,
           decoration: BoxDecoration(
-            image: DecorationImage(
-                image: AssetImage("assets/images/punch3.jpg", ),
-                fit: BoxFit.cover),
+              image: DecorationImage(
+                  image: AssetImage("assets/images/punch3.jpg"),
+                  fit: BoxFit.cover),
           ),
           child: Column(
             children: [
@@ -60,11 +64,11 @@ class Home_sqf extends StatelessWidget {
                           color: Colors.black
                       ),
                       child: ElevatedButton(style: ElevatedButton.styleFrom(backgroundColor: Colors.black),
-                        onPressed: (){
-                          Navigator.of(context).push(MaterialPageRoute(builder: (context)=>Signup_sqf()));
-                        },
-                        child: Text("SIGN UP",
-                          style: TextStyle(fontSize: 20, color: Colors.white),),),
+                          onPressed: (){
+                            Navigator.of(context).push(MaterialPageRoute(builder: (context)=>Signup_sqf()));
+                          },
+                          child: Text("SIGN UP",
+                            style: TextStyle(fontSize: 20, color: Colors.white),),),
                     ),
 
                     SizedBox(height: 40,),
@@ -83,18 +87,18 @@ class Home_sqf extends StatelessWidget {
                             style: TextStyle(fontSize: 20, color: Colors.black),),)
                     )
 
-
+                    
 
                   ],
                 ),
-              ),
-
+              ),  
+              
             ],
           ),
+          ),
+
+
         ),
-
-
-      ),
 
     );
   }
