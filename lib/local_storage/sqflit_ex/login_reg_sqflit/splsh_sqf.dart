@@ -3,7 +3,7 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:my_flutter_project/local_storage/sqflit_ex/login_reg_sqflit/home_sqf.dart';
+import 'package:my_flutter_project/local_storage/sqflit_ex/login_reg_sqflit/sginorlogin.dart';
 import 'package:simple_gradient_text/simple_gradient_text.dart';
 
 void main(){
@@ -21,7 +21,7 @@ class _Splash_sqfState extends State<Splash_sqf> {
 
   void initState(){
     Timer(Duration(seconds: 10), () {
-      Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context) => Home_sqf()));
+      Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context) => SgninorLogin_sqf()));
 
     });
     //super.initState();
@@ -33,7 +33,8 @@ class _Splash_sqfState extends State<Splash_sqf> {
     return Scaffold(
       body: Container(
         decoration: BoxDecoration(
-          image: DecorationImage(image: AssetImage("assets/images/punch.jpg"),
+          image: DecorationImage(
+              image: AssetImage("assets/images/punch.jpg"),
               fit: BoxFit.cover),
         ),
         child: Stack(
@@ -47,9 +48,6 @@ class _Splash_sqfState extends State<Splash_sqf> {
                   child: GradientText("PUNCH",
                     style: GoogleFonts.anton(
                         fontSize: 75,
-
-
-                        //color: Colors.primaries[Random().nextInt(Colors.primaries.length)]
                     ),
                     colors: [
                       Colors.black,
@@ -70,7 +68,9 @@ class _Splash_sqfState extends State<Splash_sqf> {
                   height: 150,
                   width: 200,
                   child: Text("punch",
-                    style: TextStyle(fontSize: 20, color: Colors.pink[200]),),
+                    style: TextStyle(
+                        fontSize: 20,
+                        color: Colors.pink[200]),),
                 )),
 
             Positioned(
@@ -80,7 +80,9 @@ class _Splash_sqfState extends State<Splash_sqf> {
                   height: 150,
                   width: 200,
                   child: Text("  .  ",
-                    style: TextStyle(fontSize: 50, color: Colors.black),),
+                    style: TextStyle(
+                        fontSize: 50,
+                        color: Colors.black),),
                 )),
 
             Positioned(
