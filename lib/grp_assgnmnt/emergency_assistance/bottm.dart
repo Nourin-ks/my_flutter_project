@@ -16,7 +16,9 @@ class _BottomState extends State<Bottom> with TickerProviderStateMixin {
   @override
   void initState() {
     controller =
-        MotionTabBarController(length: 5, vsync: this, initialIndex: 2);
+        MotionTabBarController(
+            length: 5,
+            vsync: this, initialIndex: 2);
     super.initState();
   }
 

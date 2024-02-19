@@ -36,9 +36,11 @@ class _SignupState extends State<Signup_sqf> {
     void isuserregister(String email) async{
       var result=await SQL_function.checkuseralreadyregister(email);
       if(result.isNotEmpty){
-        ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('user already registered')));
+        ScaffoldMessenger.of(context).showSnackBar(
+            SnackBar(content: Text('user already registered')));
       }else{
-        Navigator.of(context).push(MaterialPageRoute(builder: (context)=>Login_sqf()));
+        Navigator.of(context).push(
+            MaterialPageRoute(builder: (context)=>Login_sqf()));
       }
     }
 
@@ -93,7 +95,8 @@ class _SignupState extends State<Signup_sqf> {
                             Container(
                               width: double.infinity,
                               height: 50,
-                              decoration: BoxDecoration(color: Colors.white),
+                              decoration: BoxDecoration(
+                                  color: Colors.white),
                               child: Row(
                                 children: [
                                   IconButton(

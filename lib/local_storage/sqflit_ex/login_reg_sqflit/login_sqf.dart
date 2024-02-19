@@ -92,7 +92,8 @@ class Login_sqf extends StatelessWidget {
                             Container(
                               width: double.infinity,
                               height: 50,
-                              decoration: BoxDecoration(color: Colors.white),
+                              decoration: BoxDecoration(
+                                  color: Colors.white),
                               child: Row(
                                 children: [
                                   IconButton(

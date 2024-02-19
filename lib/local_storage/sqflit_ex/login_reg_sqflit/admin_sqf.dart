@@ -51,9 +51,6 @@ class _AdmindashState extends State<Admindash> {
                         height: MediaQuery.of(context).size.height,
                         decoration: BoxDecoration(
                             color: Colors.white,
-                            // borderRadius: BorderRadius.only(
-                            //     topLeft: Radius.circular(40),
-                            //     topRight: Radius.circular(40))
                           ),
                         child: Padding(
                           padding: const EdgeInsets.all(8.0),

@@ -21,7 +21,8 @@ class _Splash_sqfState extends State<Splash_sqf> {
 
   void initState(){
     Timer(Duration(seconds: 10), () {
-      Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context) => SgninorLogin_sqf()));
+      Navigator.of(context).pushReplacement(
+          MaterialPageRoute(builder: (context) => SgninorLogin_sqf()));
 
     });
     //super.initState();
@@ -92,7 +93,8 @@ class _Splash_sqfState extends State<Splash_sqf> {
                   height: 150,
                   width: 200,
                   child: Text("Earn",
-                    style: TextStyle(fontSize: 20, color: Colors.purple),),
+                    style: TextStyle(
+                        fontSize: 20, color: Colors.purple),),
                 )),
 
             Positioned(
@@ -102,7 +104,8 @@ class _Splash_sqfState extends State<Splash_sqf> {
                   height: 150,
                   width: 200,
                   child: Text("  .  ",
-                    style: TextStyle(fontSize: 50, color: Colors.black),),
+                    style: TextStyle(
+                        fontSize: 50, color: Colors.black),),
                 )),
 
             Positioned(
@@ -112,7 +115,8 @@ class _Splash_sqfState extends State<Splash_sqf> {
                   height: 150,
                   width: 200,
                   child: Text("Repeat",
-                    style: TextStyle(fontSize: 20, color: Colors.deepOrange),),
+                    style: TextStyle(
+                        fontSize: 20, color: Colors.deepOrange),),
                 )),
 
           ],
@@ -120,26 +124,6 @@ class _Splash_sqfState extends State<Splash_sqf> {
         ),
       ),
 
-
-
-
-
-      // body: Column(
-      //   mainAxisAlignment: MainAxisAlignment.center,
-      //   children: [
-      //    //Image(image: AssetImage("assets/images/punch.jpg",),fit: BoxFit.contain,)
-      //     Container(
-      //       height: 770,
-      //       width: double.infinity,
-      //       decoration: BoxDecoration(
-      //         image: DecorationImage(image: AssetImage("assets/images/punch.jpg"), fit: BoxFit.cover)
-      //       ),
-      //     ),
-      //     SizedBox(height: 10,),
-      //
-      //
-      //   ],
-      // ),
     );
   }
 }

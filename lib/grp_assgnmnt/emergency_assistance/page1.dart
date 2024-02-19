@@ -16,9 +16,11 @@ class Emergency_page1 extends StatelessWidget {
             height: 400,
             width: double.infinity,
             decoration: BoxDecoration(
-              image: DecorationImage(image: AssetImage("assets/images/grp1.jpeg"),
+              image: DecorationImage(
+                  image: AssetImage("assets/images/grp1.jpeg"),
               fit: BoxFit.cover),
-              borderRadius: BorderRadius.vertical(bottom: Radius.elliptical(100, 100)),
+              borderRadius: BorderRadius.vertical(
+                  bottom: Radius.elliptical(100, 100)),
             ),
           ),
           SizedBox(
@@ -47,20 +49,27 @@ class Emergency_page1 extends StatelessWidget {
               borderRadius: BorderRadius.circular(30),
               color: Colors.red
             ),
-            child: ElevatedButton(style: ElevatedButton.styleFrom(backgroundColor: Colors.red),
+            child: ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.red),
                 onPressed: (){
-              Navigator.of(context).push(MaterialPageRoute(builder: (context)=>Bottom()));
+              Navigator.of(context).push(
+                  MaterialPageRoute(builder: (context)=>Bottom()));
                 },
                 child: Row(
                   mainAxisSize: MainAxisSize.min,
                   children: [
                     Text("Lets get started", 
-                      style: TextStyle(fontSize: 20, color: Colors.white),),
+                      style: TextStyle(
+                          fontSize: 20,
+                          color: Colors.white),),
                     SizedBox(
                       width: 10,
                     ),
                     
-                    Icon(Icons.arrow_forward, color: Colors.white,)
+                    Icon(
+                      Icons.arrow_forward,
+                      color: Colors.white,)
                     
                   ],
                 )),

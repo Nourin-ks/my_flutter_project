@@ -60,10 +60,6 @@ class _EmergencyHomeState extends State<EmergencyHome>
     "(576) 661-0626",
   ];
   @override
-  // void initState() {
-  //   starttimer();
-  //   super.initState();
-  // }
 
   void starttimer() {
     timer = Timer.periodic(Duration(seconds: 1), (timer) {
@@ -105,7 +101,9 @@ class _EmergencyHomeState extends State<EmergencyHome>
               Center(
                 child: Text(
                   'Dont worry our support team will\ncontact you in next',
-                  style: TextStyle(fontSize: 18, color: Colors.grey),
+                  style: TextStyle(
+                      fontSize: 18,
+                      color: Colors.grey),
                 ),
               ),
               SizedBox(
@@ -121,7 +119,8 @@ class _EmergencyHomeState extends State<EmergencyHome>
                       value: 1 - (secondremaining / 60.0),
                       strokeWidth: 13,
                       backgroundColor: const Color.fromARGB(255, 245, 20, 4),
-                      valueColor: AlwaysStoppedAnimation<Color>(Colors.grey),
+                      valueColor: AlwaysStoppedAnimation<Color>(
+                          Colors.grey),
                     ),
                     Center(
                       child: Column(

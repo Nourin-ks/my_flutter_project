@@ -39,7 +39,9 @@ class SgninorLogin_sqf extends StatelessWidget {
                   height: 515,
                   width: double.infinity,
                   decoration: BoxDecoration(
-                      borderRadius: BorderRadius.only(topRight: Radius.circular(50), topLeft: Radius.circular(50)),
+                      borderRadius: BorderRadius.only(
+                          topRight: Radius.circular(50),
+                          topLeft: Radius.circular(50)),
                       color: Colors.white
                   ),
                 
@@ -49,7 +51,8 @@ class SgninorLogin_sqf extends StatelessWidget {
                       Icon(Icons.credit_card, size: 66,),
                       SizedBox(height: 20,),
                       Text("  organise, find and enjoy your\nloyality cards in a more modern\n          and dynamic way",
-                        style: TextStyle(fontSize: 17, fontWeight: FontWeight.w500),),
+                        style: TextStyle(
+                            fontSize: 17, fontWeight: FontWeight.w500),),
                 
                       SizedBox(height: 70,),
                 
@@ -60,12 +63,17 @@ class SgninorLogin_sqf extends StatelessWidget {
                             borderRadius: BorderRadius.circular(30),
                             color: Colors.black
                         ),
-                        child: ElevatedButton(style: ElevatedButton.styleFrom(backgroundColor: Colors.black),
+                        child: ElevatedButton(
+                          style: ElevatedButton.styleFrom(
+                              backgroundColor: Colors.black),
                           onPressed: (){
-                            Navigator.of(context).push(MaterialPageRoute(builder: (context)=>Signup_sqf()));
+                            Navigator.of(context).push(
+                                MaterialPageRoute(
+                                    builder: (context)=>Signup_sqf()));
                           },
                           child: Text("SIGN UP",
-                            style: TextStyle(fontSize: 20, color: Colors.white),),),
+                            style: TextStyle(
+                                fontSize: 20, color: Colors.white),),),
                       ),
                 
                       SizedBox(height: 40,),
@@ -76,12 +84,16 @@ class SgninorLogin_sqf extends StatelessWidget {
                               color: Colors.black
                           ),
                           child: OutlinedButton(
-                            style: OutlinedButton.styleFrom(backgroundColor: Colors.white),
+                            style: OutlinedButton.styleFrom(
+                                backgroundColor: Colors.white),
                             onPressed: (){
-                              Navigator.of(context).push(MaterialPageRoute(builder: (context)=>Login_sqf()));
+                              Navigator.of(context).push(
+                                  MaterialPageRoute(
+                                      builder: (context)=>Login_sqf()));
                             },
                             child: Text("LOGIN",
-                              style: TextStyle(fontSize: 20, color: Colors.black),),)
+                              style: TextStyle(
+                                  fontSize: 20, color: Colors.black),),)
                       )
                 
                 

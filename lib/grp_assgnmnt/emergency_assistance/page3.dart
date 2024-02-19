@@ -74,7 +74,9 @@ class Emergency_page3 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        leading: const Icon(Icons.keyboard_backspace,color: Colors.white,),
+        leading: const Icon(
+          Icons.keyboard_backspace,
+          color: Colors.white,),
         centerTitle: true,
         title: const Text(
           "Emergency Contact List",
@@ -106,7 +108,9 @@ class Emergency_page3 extends StatelessWidget {
                               ),
                               title: Text(names[index]),
                               subtitle: Text(phnnum[index]),
-                              trailing: const Icon(Icons.more_vert,color: Colors.black,),
+                              trailing: const Icon(
+                                Icons.more_vert,
+                                color: Colors.black,),
                             ),
                           ))
               ),
