@@ -3,13 +3,16 @@ import 'package:my_flutter_project/screens/home.dart';
 import 'package:my_flutter_project/screens/signup.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+void main(){
+  runApp(MaterialApp(home: Login(),));
+}
 class Login extends StatelessWidget{
   //for fetching values from textfield
   final uname_cntrl=TextEditingController();
   final pwd_cntrl=TextEditingController();
 
-  String username="abc@gmail.com";
-  String password="1234";
+  String? username;
+  String? password;
 
 
 
@@ -64,17 +67,9 @@ class Login extends StatelessWidget{
           ElevatedButton(
               onPressed: (){
                 if(uname_cntrl.text !="" && pwd_cntrl !=""){
-                  if(uname_cntrl.text==username && pwd_cntrl.text==password){
                     Navigator.of(context)
                         .push(MaterialPageRoute(builder: (context)=>Home()));
                   }
-                  else{
-                    ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-                        backgroundColor: Colors.red,
-                        content: Text(
-                            "username/password incorrect")));
-                  }
-                }
                 else{
                   ScaffoldMessenger.of(context).showSnackBar(SnackBar(
                       backgroundColor: Colors.red,

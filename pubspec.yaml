@@ -47,6 +47,7 @@ dependencies:
   get:
   email_validator:
   cached_network_image: ^3.3.1
+  badges: ^3.1.2
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -91,8 +92,10 @@ flutter:
     - assets/images/
     - assets/icons/
     - assets/animation/
-    - assets/assignment/
     - assets/music/
+    - assets/farmers/
+    - assets/nike/
+    - assets/tourism/
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

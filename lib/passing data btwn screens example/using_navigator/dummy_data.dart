@@ -3,7 +3,7 @@ List<Map<String,dynamic>> products = [
     "id":  1,
     "name":"product 1",
     "price": 3800,
-    "description":"Characterised by finest craftsmanship, Pierre Cardin’s shoes with sturdy leather uppers can transmute a simple to look to perfection. ",
+    "description":" Characterised by finest craftsmanship, Pierre Cardin’s shoes with sturdy leather uppers can transmute a simple to look to perfection. ",
     "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCJTLFzt_tu7hd5Tk0M49FibqxWcQplBI-dQ&usqp=CAU",
     "rating":4.5,
 
